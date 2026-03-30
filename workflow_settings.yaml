@@ -1,5 +1,5 @@
 defaultProject: "curso-dataform-rodrigo"
-defaultLocation: "europe-west1"
+defaultLocation: "US"
 defaultDataset: "dataform_staging"
 defaultAssertionDataset: "dataform_assertions"
 dataformCoreVersion: "3.0.42"
