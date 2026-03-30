@@ -5,4 +5,4 @@ config {
 }
 
 GRANT SELECT ON ${ref("fact_cohort_retention")} 
-TO "serviceAccount:service-106039082375@gcp-sa-dataform.iam.gserviceaccount.com";
+TO "service-152878513980@gcp-sa-dataform.iam.gserviceaccount.com";
