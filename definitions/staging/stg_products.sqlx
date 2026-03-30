@@ -11,4 +11,3 @@ SELECT
   cost as product_cost
 FROM
   ${ref("products")}
-   
