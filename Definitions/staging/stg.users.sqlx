@@ -11,3 +11,4 @@ SELECT
   signup_date
 FROM
   ${ref("users")}
+   

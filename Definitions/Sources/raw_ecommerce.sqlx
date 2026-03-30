@@ -21,3 +21,4 @@ config {
   name: "products",
   description: "Catálogo de productos"
 }
+ 
