@@ -1,16 +1,8 @@
 config {
-  type: "table",
+  type: "operations",
   schema: "dataform_marts",
-  name: "fact_cohort_retention"
+  name: "grant_permissions_fact_cohort" -- Cambia este nombre (era igual al de la tabla)
 }
 
--- Aquí iría tu SELECT principal para crear la tabla
-SELECT ... 
-
-post_operations {
-  -- Solo ejecuta el GRANT si realmente confirmaste que la cuenta existe en IAM
-  -- GRANT SELECT ON ${self()} TO "serviceAccount:service-106039082375@gcp-sa-dataform.iam.gserviceaccount.com";
-
-  DELETE FROM `curso-dataform-rodrigo.dataform_processing.orders_enriched`
-  WHERE created_at < DATE_SUB(CURRENT_DATE(), INTERVAL 5 YEAR);
-}
+GRANT SELECT ON ${ref("fact_cohort_retention")} 
+TO "serviceAccount:service-106039082375@gcp-sa-dataform.iam.gserviceaccount.com";
