@@ -18,4 +18,3 @@ FROM
   ${ref("orders")}
 WHERE
   amount > 0 -- Regla de calidad básica: no ventas en 0
-   
