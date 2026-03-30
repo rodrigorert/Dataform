@@ -1,5 +1,0 @@
-defaultProject: "curso-dataform-rodrigo"
-defaultLocation: "us-central1"
-defaultDatabase: "datform_staging"
-defaultAssertionDatabase: "datform_assertions"
-dataformCoreVersion: "3.0.0"
